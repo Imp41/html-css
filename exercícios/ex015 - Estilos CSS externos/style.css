@@ -1,0 +1,18 @@
+
+body {
+    background-color: rgb(219, 233, 142);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;    
+}
+h1 {
+    color: rgb(251, 255, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    background-color: rgb(214, 122, 69);   
+}
+h2 {
+    color:rgb(63, 19, 3);
+}
+p {
+    text-align: justify;
+}

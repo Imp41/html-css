@@ -1,0 +1,107 @@
+@font-face {
+    font-family:idroid ;
+    src: url(fontes/idroid.otf);
+}
+
+
+body {
+    background-color: aquamarine;
+    text-align: justify;
+}
+header { 
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+#principal {
+    display: block;
+    background: linear-gradient(green , #145005 , #1c9e38, rgb(159, 216, 159));
+    height: auto;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    block-size: auto;
+}
+nav {
+    text-align: left;
+    text-decoration: none;
+}
+
+nav > a:visited {
+    color: white ;
+    text-decoration: none;  
+}
+
+div {
+    display: block;
+    block-size: auto ;
+    width: 80%;
+    background-color: white;
+    text-align: none ;
+    margin: auto; 
+    border-radius: 5px;
+    padding: auto;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.795);
+    }
+h2 {
+    font-family: 'idroid';
+    color: #155c21;
+}
+h3 {
+    font-family: 'idroid';
+    background-color: #9dcc9649;
+    color: #15a521;
+}
+    .nomes {
+    color: #155c21;
+    font-size: larger;
+    font-weight: bold;
+}
+    .imagens {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+    article > div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #7ce49fd7;
+    color: white;
+}
+article {
+    display: block;
+    block-size: auto ;
+    width: 80%;
+    background-color: rgba(31, 134, 37, 0.89);
+    text-align: none ;
+    margin: 5px auto ; 
+    padding: 5px 5px ;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.795);
+    color: white;
+    }
+
+.corpo {
+    display: block;
+    width: 100%;
+    background-color: white;
+    text-align: center ;
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 5px;
+    padding: auto;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.795);
+}
+footer {
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: #155c21;
+    block-size: 2em;
+    padding: auto;
+    outline: auto;
+    margin:auto;
+    border-radius: 4px;
+}
