@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background:linear-gradient(-45deg, rgb(240, 117, 45),rgb(235, 159, 19), rgb(243, 243, 114));
+    width: 100%;
+    height: 100vh;
+}
+
+#form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 60px;
+    width: min-content;
+    align-items: center;
+    color: rgb(219, 90, 15) ;
+}
+
+.title {
+    font-size: 2em;
+    font-family: 'Roboto Slab';
+    margin-bottom: 10%;
+}
+
+.input {
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px black;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+
+.input i {
+    font-size: 1.2em;
+    padding: 5px;
+    background: -webkit-linear-gradient(-45deg, rgb(240, 117, 45),rgb(235, 159, 19), rgb(243, 243, 114)) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input input {
+    width: 80%;
+    border: none;
+    outline: none;
+    font-family: 'Roboto Slab';
+    transform: translateY(-10%);
+}
+
+#btn {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#btn button {
+    font-family: 'Roboto Slab';
+    background: linear-gradient(-45deg, rgb(240, 117, 45),rgb(235, 159, 19), rgb(243, 243, 114)) ;
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1.2em;
+    color: rgb(233, 233, 233);
+    border-radius: 20px;
+    outline: none;
+    cursor:pointer
+}
+
+#btn button:hover {
+    background:linear-gradient((-45deg, rgb(240, 117, 45),rgb(235, 159, 19), rgb(243, 243, 114)) );
+}
+@keyframes iniciar {
+   0%{
+        top: -20%;
+        opacity: 0;
+        pointer-events: none;
+   }
+   100%{
+        top:50%;
+        opacity:100%; }}
