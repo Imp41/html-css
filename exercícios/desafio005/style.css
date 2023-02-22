@@ -1,3 +1,66 @@
-body {
-    background-color: bisque;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+html, body {
+    min-height: 100%;
+    background-color: beige;
+}
+
+header {
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: brown;
+}
+
+section.imagem {
+    background-color: rgb(247, 237, 156);
+    color: chocolate;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(247, 207, 170, 0.863);
+    border-radius: 8px;
+}
+
+footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
