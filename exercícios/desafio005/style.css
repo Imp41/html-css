@@ -4,8 +4,7 @@
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Indie Flower', cursive;
-    --fonte3: 'Josefin Sans', sans-serif; 
+    --fonte2: 'Josefin Sans', sans-serif; 
 }
 
 * {
@@ -19,29 +18,50 @@ html, body {
 }
 
 header {
-    background-color: chocolate;
+    background-image: linear-gradient(to bottom, rgb(211, 123, 60), brown);
     color: white;
     text-align: center;
 }
 
 header > h1 {
-    padding-top: 50px;
+    padding-top: 40px;
     font-variant: small-caps;
     font-family: var(--fonte1);
 }
 
 header > p {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+header p:hover {
+    text-decoration: underline;
+}
+
+nav {
+    padding-bottom: 30px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.411);
+    min-width: fit-content;
+}
+
+nav > a {
+    color: rgba(228, 194, 132, 0.925);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--fonte1);
+    margin: 0px 2vh 2vh 5px;
+}
+
+nav > a:hover {
+    background-color: bisque;
+    color: brown;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 section.normal {
@@ -54,18 +74,18 @@ section.normal {
     padding-bottom: 10vh;
     line-height: 1em;
     padding-left: 30px;
-    font-family: var(--fonte3);
-    font-size: 2.5vw;
+    font-family: var(--fonte2);
+    font-size: 3.2vw;
 }
 
 section.normal > p {
     display: inline-block;
-    width: 48vw;
+    width: 55vw;
     background-color: rgba(247, 207, 170, 0.774);
     border-radius: 8px;
-    padding: 30px 10px;
-    margin: 20px 0px 20px 0px;
-    text-shadow: 1px 1px 0px black;
+    padding: 25px 15px;
+    margin: 15px 0px 15px 0px;
+    text-shadow: 1px 1px 0px rgb(216, 119, 8);
 }
 
 section.imagem {
@@ -73,20 +93,20 @@ section.imagem {
     color: chocolate;
     background-size: cover;
     background-attachment: fixed;
-    padding: 5vh 5vh 5vh 25vh;
+    padding: 10vh 5vh 10vh 25vh;
     line-height: 1em;
-    font-family: var(--fonte3);
-    font-size: 2.5vw;
+    font-family: var(--fonte2);
+    font-size: 3.2vw;
 }
 
 section.imagem > p {
     display: inline-block;
-    width: 48vw;
+    width: 55vw;
     background-color: rgba(247, 207, 170, 0.774);
     border-radius: 8px;
-    padding: 30px 10px;
-    margin: 20px 0px 20px 0px;
-    text-shadow: 1px 1px 0px black;
+    padding: 25px 15px;
+    margin: 15px 0px 15px 0px;
+    text-shadow: 1px 1px 0px rgb(160, 57, 9);
 }
 
 section#img01 {
@@ -96,7 +116,7 @@ section#img01 {
 
 section#img02 {
     background-image: url('imagens/arcdetriomphe.jpg');
-    background-position: center top ;
+    background-position: center bottom;
 }
 
 section#img03 {
@@ -106,10 +126,12 @@ section#img03 {
 
 section#img04 {
     background-image: url('imagens/kyotogosho.jpg');
+    background-position: center;
 }
 
 section#img05 {
     background-image: url('imagens/ilhadapascoa.jpg');
+    background-position:  center center;
 }
 
 footer {
@@ -117,4 +139,10 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: var(--fonte2)
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font: var(--fonte1);
 }
