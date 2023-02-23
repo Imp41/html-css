@@ -5,8 +5,7 @@
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Indie Flower', cursive;
-    --fonte3: 'Josefin Sans', sans-serif;
-    
+    --fonte3: 'Josefin Sans', sans-serif; 
 }
 
 * {
@@ -67,11 +66,24 @@ section.imagem {
 
 section.imagem > p {
     display: inline-block;
-    width: 55vw;
-    background-color: rgba(247, 207, 170, 0.863);
+    width: 48vw;
+    background-color: rgba(247, 207, 170, 0.774);
     border-radius: 8px;
+    padding: 30px 10px;
+    margin: 20px 0px 20px 0px;
+    text-shadow: 1px 1px 0px black;
 }
 
+section#img01 {
+    background-image: url('imagens/arcdetriomphe.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('imagens/kyotogosho.jpg');
+    background-size: cover;
+}
 footer {
     background-color: brown;
     color: white;
