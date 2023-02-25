@@ -80,7 +80,7 @@ section.normal {
 
 section.normal > p {
     display: inline-block;
-    width: 54vw;
+    width: 48vw;
     background-color: rgba(247, 207, 170, 0.774);
     border-radius: 8px;
     padding: 25px 15px;
@@ -101,7 +101,7 @@ section.imagem {
 
 section.imagem > p {
     display: inline-block;
-    width: 54vw;
+    width: 48vw;
     background-color: rgba(247, 207, 170, 0.774);
     border-radius: 8px;
     padding: 25px 15px;
