@@ -5,6 +5,6 @@
 
 <a href= "https://imp41.github.io/html-css/exercícios/desafio005">1º projeto sozinho</a>
 
-<a href= "https://github.com/Imp41/html-css/exercícios/ex024/tabela002">1ª lista</a>
+<a href= "https://imp41.github.io/html-css/exercícios/ex024/tabela002.html>1ª lista</a>
 
 
