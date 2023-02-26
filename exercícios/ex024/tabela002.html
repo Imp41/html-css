@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-image: url(kanto.png);
+
+        }
+
+        table {
+            width: 300px;
+            margin: auto;
+            font-size: 14px;
+        
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 14px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+/* INICIO DOS TIPOS */
+        .planta {
+            background-color: #78C850;
+        }
+        
+        .fogo {
+            background-color: #F08030;
+        }
+
+        .agua {
+            background-color: #6890F0;
+        }
+        
+        .inseto {
+            background-color: #A8B820;
+        }
+
+        .normal {
+            background-color: #A8A878;
+        }
+
+        .venenoso {
+            background-color: #A040A0;
+        }
+
+        .eletrico {
+            background-color: #F8D030;
+        }
+
+        .terra {
+            background-color: #EBD69D ;
+        }
+
+        .lutador {
+            background-color: #C03028;
+        }
+
+        .psiquico {
+            background-color: #F85888;
+        }
+
+        .pedra {
+            background-color: #B8A038;
+        }
+
+        .fantasma {
+            background-color: #705898;
+        }
+        
+        .gelo {
+            background-color: #98D8D8;
+        }
+
+        .dragao {
+            background-color: #7038F8;
+        }
+/* FIM DOS TIPOS */
+
+        .icon {
+            display: inline-block;
+            margin: 0px 10vh 0px 10vh;           
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table class = "BarTable" style="width:20%;height: 100%" cellpadding="0" cellspacing="1">
+        <thead>
+            <tr>
+                <th>Pokémon</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="planta">
+                <td>Bulbasaur <img class="icon" src="bulbasaur.png" alt="bulbasaur"></td>
+                <td>Planta</td>
+            </tr>
+            <tr class="planta">
+                <td>Ivysaur <img class="icon" src="ivysaur.png" alt="ivysaur"></td>
+                <td>Planta</td>
+            </tr>
+            <tr class="planta">
+                <td>Venusaur <img class="icon" src="venusaur.png" alt="ivysaur"></td>
+                <td>Planta/Venenoso</td>
+            </tr>
+            <tr class="fogo">
+                <td>Charmander <img class="icon" src="charmander.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="fogo">
+                <td>Charmeleon <img class="icon" src="charmeleon.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="fogo">
+                <td>Charizard <img class="icon" src="charizard.png" alt="charmander"></td>
+                <td>Fogo/Voador</td>
+            </tr>
+            <tr class="agua">
+                <td>Squirtle <img class="icon" src="squirtle.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Wartortle <img class="icon" src="wartortle.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Blastoise <img class="icon" src="blastoise.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="inseto">
+                <td>Caterpie <img class="icon" src="caterpie.png" alt="charmander"></td>
+                <td>Inseto</td>
+            </tr>
+            <tr class="inseto">
+                <td>Metapod <img class="icon" src="metapod.png" alt="charmander"></td>
+                <td>Inseto</td>
+            </tr>
+            <tr class="inseto">
+                <td>Butterfree <img class="icon" src="buterfree.png" alt="charmander"></td>
+                <td>Inseto/Venenoso</td>
+            </tr>
+            <tr class="inseto">
+                <td>Weedle <img class="icon" src="weedle.png" alt="charmander"></td>
+                <td>Inseto/Venenoso</td>
+            </tr>
+            <tr class="inseto">
+                <td>Kakuna <img class="icon" src="kakuna.png" alt="charmander"></td>
+                <td>Inseto/Venenoso</td>
+            </tr>
+            <tr class="inseto">
+                <td>Beedrill <img class="icon" src="beedrill.png" alt="charmander"></td>
+                <td>Inseto/Venenoso</td>
+            </tr>
+            <tr class="normal">
+                <td>Pidgey <img class="icon" src="pidgey.png" alt="charmander"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="normal">
+                <td>Pidgeotto <img class="icon" src="pidgeotto.png" alt="charmander"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="normal">
+                <td>Pidgeot <img class="icon" src="pidgeot.png" alt="charmander"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="normal">
+                <td>Rattata <img class="icon" src="rattata.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Raticate <img class="icon" src="raticate.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Spearow <img class="icon" src="spearow.png" alt="charmander"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="normal">
+                <td>Fearow <img class="icon" src="fearow.png" alt="charmander"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Ekans <img class="icon" src="ekans.png" alt="charmander"></td>
+                <td>Venenoso</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Arbok <img class="icon" src="arbok.png" alt="charmander"></td>
+                <td>Venenoso</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Pikachu <img class="icon" src="pikachu.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Raichu <img class="icon" src="raichu.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="terra">
+                <td>Sandshrew <img class="icon" src="sandshrew.png" alt="charmander"></td>
+                <td>Terra</td>
+            </tr>
+            <tr class="terra">
+                <td>Sandslash <img class="icon" src="sandslash.png" alt="charmander"></td>
+                <td>Terra</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Nidoran♀ <img class="icon" src="nidoranf.png" alt="charmander"></td>
+                <td>Venenoso</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Nidorina <img class="icon" src="nidorina.png" alt="charmander"></td>
+                <td>Venenoso</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Nidoqueen <img class="icon" src="nidoqueen.png" alt="charmander"></td>
+                <td>Venenoso/Terra</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Nidoran♂ <img class="icon" src="nidoranm.png" alt="charmander"></td>
+                <td>Venenoso</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Nidorino <img class="icon" src="nidorino.png" alt="charmander"></td>
+                <td>Venenoso</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Nidoking <img class="icon" src="nidoking.png" alt="charmander"></td>
+                <td>Venenoso/Terra</td>
+            </tr>
+            <tr class="normal">
+                <td>Clefairy <img class="icon" src="clefairy.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Clefable <img class="icon" src="clefable.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="fogo">
+                <td>Vulpix <img class="icon" src="vulpix.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="fogo">
+                <td>Ninetales <img class="icon" src="ninetales.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="normal">
+                <td>Jigglypuff <img class="icon" src="jigglypuff.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Wigglytuff <img class="icon" src="wigglytuff.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Zubat <br><img class="icon" src="zubat.png" alt="charmander"></td>
+                <td>Venenoso/Voador</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Golbat <img class="icon" src="golbat.png" alt="charmander"></td>
+                <td>Venenoso/Voador</td>
+            </tr>
+            <tr class="planta">
+                <td>Oddish <img class="icon" src="oddish.png" alt="charmander"></td>
+                <td>Planta/Venenoso</td>
+            </tr>
+            <tr class="planta">
+                <td>Gloom <img class="icon" src="gloom.png" alt="charmander"></td>
+                <td>Planta/Venenoso</td>
+            </tr>
+            <tr class="planta">
+                <td>Vileplume <img class="icon" src="vileplume.png" alt="charmander"></td>
+                <td>Planta/Venenoso</td>
+            </tr>
+            <tr class="inseto">
+                <td>Paras <img class="icon" src="paras.png" alt="charmander"></td>
+                <td>Inseto/Planta</td>
+            </tr>
+            <tr class="inseto">
+                <td>Parasect <img class="icon" src="parasect.png" alt="charmander"></td>
+                <td>Inseto/Planta</td>
+            </tr>
+            <tr class="inseto">
+                <td>Venonat <img class="icon" src="venonat.png" alt="charmander"></td>
+                <td>Inseto/Venenoso</td>
+            </tr>
+            <tr class="inseto">
+                <td>Venomoth <img class="icon" src="venomoth.png" alt="charmander"></td>
+                <td>Inseto/Venenoso</td>
+            </tr>
+            <tr class="terra">
+                <td>Diglett <img class="icon" src="diglett.png" alt="charmander"></td>
+                <td>Terra</td>
+            </tr>
+            <tr class="terra">
+                <td>Dugtrio <img class="icon" src="dugtrio.png" alt="charmander"></td>
+                <td>Terra</td>
+            </tr>
+            <tr class="normal">
+                <td>Meowth <img class="icon" src="meowth.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Persian <img class="icon" src="persian.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="agua">
+                <td>Psyduck <img class="icon" src="psyduck.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Golduck <img class="icon" src="golduck.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="lutador">
+                <td>Mankey <img class="icon" src="mankey.png" alt="charmander"></td>
+                <td>Lutador</td>
+            </tr>
+            <tr class="lutador">
+                <td>Primeape <img class="icon" src="primeape.png" alt="charmander"></td>
+                <td>Lutador</td>
+            </tr>
+            <tr class="fogo">
+                <td>Growlithe <img class="icon" src="growlithe.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="fogo">
+                <td>Arcanine <img class="icon" src="arcanine.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="agua">
+                <td>Poliwag <img class="icon" src="poliwag.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Poliwhirl <img class="icon" src="poliwhirl.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Poliwrath <img class="icon" src="poliwrath.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Abra <br> <img class="icon" src="abra.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Kadabra <img class="icon" src="kadabra.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Alakazam <img class="icon" src="alakazam.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+            <tr class="lutador">
+                <td>Machop <img class="icon" src="machop.png" alt="charmander"></td>
+                <td>Lutador</td>
+            </tr>
+            <tr class="lutador">
+                <td>Machoke <img class="icon" src="machoke.png" alt="charmander"></td>
+                <td>Lutador</td>
+            </tr>
+            <tr class="lutador">
+                <td>Machamp <img class="icon" src="machamp.png" alt="charmander"></td>
+                <td>Lutador</td>
+            </tr>
+            <tr class="planta">
+                <td>Bellsprout <img class="icon" src="bellsprout.png" alt="charmander"></td>
+                <td>Planta/Venenoso</td>
+            </tr>
+            <tr class="planta">
+                <td>Weepinbell <img class="icon" src="weepinbell.png" alt="charmander"></td>
+                <td>Planta/Venenoso</td>
+            </tr>
+            <tr class="planta">
+                <td>Victreebel <img class="icon" src="victreebel.png" alt="charmander"></td>
+                <td>Planta/Venenoso</td>
+            </tr>
+            <tr class="agua">
+                <td>Tentacool <img class="icon" src="tentacool.png" alt="charmander"></td>
+                <td>Água/Venenoso</td>
+            </tr>
+            <tr class="agua">
+                <td>Tentacruel <img class="icon" src="tentacruel.png" alt="charmander"></td>
+                <td>Água/Venenoso</td>
+            </tr>
+            <tr class="pedra">
+                <td>Geodude <img class="icon" src="geodude.png" alt="charmander"></td>
+                <td>Pedra</td>
+            </tr>
+            <tr class="pedra">
+                <td>Graveler <img class="icon" src="graveler.png" alt="charmander"></td>
+                <td>Pedra</td>
+            </tr>
+            <tr class="pedra">
+                <td>Golem <img class="icon" src="golem.png" alt="charmander"></td>
+                <td>Pedra</td>
+            </tr>
+            <tr class="fogo">
+                <td>Ponyta <img class="icon" src="ponyta.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="fogo">
+                <td>Rapidash <img class="icon" src="rapidash.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="agua">
+                <td>Slowpoke <img class="icon" src="slowpoke.png" alt="charmander"></td>
+                <td>Água/Psíquico</td>
+            </tr>
+            <tr class="agua">
+                <td>Slowbro <img class="icon" src="slowbro.png" alt="charmander"></td>
+                <td>Água/Psíquico</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Magnemite <img class="icon" src="magnemite.png" alt="charmander"></td>
+                <td>Elétrico/Aço</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Magneton <img class="icon" src="magneton.png" alt="charmander"></td>
+                <td>Elétrico/Aço</td>
+            </tr>
+            <tr class="normal">
+                <td>Farfetch'd <img class="icon" src="farfetch'd.png" alt="charmander"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="normal">
+                <td>Doduo <img class="icon" src="doduo.png" alt="charmander"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="normal">
+                <td>Dodrio <img class="icon" src="dodrio.png" alt="charmander"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="agua">
+                <td>Seel <br><img class="icon" src="seel.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Dewgong <img class="icon" src="dewgong.png" alt="charmander"></td>
+                <td>Água/Gelo</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Grimer <img class="icon" src="grimer.png" alt="charmander"></td>
+                <td>Venenoso</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Muk <br><img class="icon" src="muk.png" alt="charmander"></td>
+                <td>Venenoso</td>
+            </tr>
+            <tr class="agua">
+                <td>Shellder <img class="icon" src="shellder.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Cloyster <img class="icon" src="cloyster.png" alt="charmander"></td>
+                <td>Água/Gelo</td>
+            </tr>
+            <tr class="fantasma">
+                <td>Gastly <img class="icon" src="gastly.png" alt="charmander"></td>
+                <td>Fantasma</td>
+            </tr>
+            <tr class="fantasma">
+                <td>Haunter <img class="icon" src="haunter.png" alt="charmander"></td>
+                <td>Fantasma</td>
+            </tr>
+            <tr class="fantasma">
+                <td>Gengar <img class="icon" src="gengar.png" alt="charmander"></td>
+                <td>Fantasma</td>
+            </tr>
+            <tr class="pedra">
+                <td>Onix <br> <img class="icon" src="onix.png" alt="charmander"></td>
+                <td>Pedra/Terra</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Drowzee <img class="icon" src="drowzee.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Hypno <img class="icon" src="hypno.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+            <tr class="agua">
+                <td>Krabby <img class="icon" src="krabby.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Kingler <img class="icon" src="kingler.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Voltorb <img class="icon" src="voltorb.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Electrode <img class="icon" src="electrode.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="planta">
+                <td>Exeggcute <img class="icon" src="exeggcute.png" alt="charmander"></td>
+                <td>Planta/Psíquico</td>
+            </tr>
+            <tr class="planta">
+                <td>Exeggutor <img class="icon" src="exeggutor.png" alt="charmander"></td>
+                <td>Planta/Psíquico</td>
+            </tr>
+            <tr class="terra">
+                <td>Cubone <img class="icon" src="cubone.png" alt="charmander"></td>
+                <td>Terra</td>
+            </tr>
+            <tr class="terra">
+                <td>Marowak <img class="icon" src="marowak.png" alt="charmander"></td>
+                <td>Terra</td>
+            </tr>
+            <tr class="lutador">
+                <td>Hitmonlee <img class="icon" src="hitmonlee.png" alt="charmander"></td>
+                <td>Lutador</td>
+            </tr>
+            <tr class="lutador">
+                <td>Hitmonchan <img class="icon" src="hitmonchan.png" alt="charmander"></td>
+                <td>Lutador</td>
+            </tr>
+            <tr class="normal">
+                <td>Lickitung <img class="icon" src="lickitung.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Koffing <img class="icon" src="koffing.png" alt="charmander"></td>
+                <td>Venenoso</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Weezing <img class="icon" src="weezing.png" alt="charmander"></td>
+                <td>Venenoso</td>
+            </tr>
+            <tr class="terra">
+                <td>Rhyhorn <img class="icon" src="rhyhorn.png" alt="charmander"></td>
+                <td>Terra/Pedra</td>
+            </tr>
+            <tr class="terra">
+                <td>Rhydon <img class="icon" src="rhydon.png" alt="charmander"></td>
+                <td>Terra/Pedra</td>
+            </tr>
+            <tr class="normal">
+                <td>Chansey <img class="icon" src="chansey.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="planta">
+                <td>Tangela <img class="icon" src="tangela.png" alt="charmander"></td>
+                <td>Planta</td>
+            </tr>
+            <tr class="normal">
+                <td>Kangaskhan <img class="icon" src="kangaskhan.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="agua">
+                <td>Horsea <img class="icon" src="cloyster.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Seadra <img class="icon" src="seadra.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Goldeen <img class="icon" src="goldeen.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Seaking <img class="icon" src="seaking.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Staryu <img class="icon" src="staryu.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Starmie <img class="icon" src="starmie.png" alt="charmander"></td>
+                <td>Água/Psíquico</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Mr. Mime <img class="icon" src="mrmime.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+            <tr class="inseto">
+                <td>Scyther <img class="icon" src="scyther.png" alt="charmander"></td>
+                <td>Inseto/Voador</td>
+            </tr>
+            <tr class="gelo">
+                <td>Jynx <br> <img class="icon" src="jynx.png" alt="charmander"></td>
+                <td>Gelo/Psíquico</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Electabuzz <img class="icon" src="electabuzz.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="fogo">
+                <td>Magmar <img class="icon" src="magmar.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="inseto">
+                <td>Pinsir <img class="icon" src="pinsir.png" alt="charmander"></td>
+                <td>Inseto</td>
+            </tr>
+            <tr class="normal">
+                <td>Tauros <img class="icon" src="tauros.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="agua">
+                <td>Magikarp <img class="icon" src="magikarp.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Gyarados <img class="icon" src="gyarados.png" alt="charmander"></td>
+                <td>Água/Voador</td>
+            </tr>
+            <tr class="agua">
+                <td>Lapras <img class="icon" src="lapras.png" alt="charmander"></td>
+                <td>Água/Gelo</td>
+            </tr>
+            <tr class="normal">
+                <td>Ditto <br> <img class="icon" src="ditto.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Eevee <img class="icon" src="eevee.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="agua">
+                <td>Vaporeon <img class="icon" src="vaporeon.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Jolteon <img class="icon" src="jolteon.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="fogo">
+                <td>Flareon <img class="icon" src="flareon.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="normal">
+                <td>Porygon <img class="icon" src="porygon.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="pedra">
+                <td>Omanyte <img class="icon" src="omanyte.png" alt="charmander"></td>
+                <td>Pedra/Água</td>
+            </tr>
+            <tr class="pedra">
+                <td>Omastar <img class="icon" src="omastar.png" alt="charmander"></td>
+                <td>Pedra/Água</td>
+            </tr>
+            <tr class="pedra">
+                <td>Kabuto <img class="icon" src="kabuto.png" alt="charmander"></td>
+                <td>Pedra/Água</td>
+            </tr>
+            <tr class="pedra">
+                <td>Kabutops <img class="icon" src="kabutops.png" alt="charmander"></td>
+                <td>Pedra/Água</td>
+            </tr>
+            <tr class="pedra">
+                <td>Aerodactyl <img class="icon" src="aerodactyl.png" alt="charmander"></td>
+                <td>Pedra/Voador</td>
+            </tr>
+            <tr class="normal">
+                <td>Snorlax <img class="icon" src="snorlax.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="gelo">
+                <td>Articuno <img class="icon" src="articuno.png" alt="charmander"></td>
+                <td>Gelo/Voador</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Zapdos <img class="icon" src="zapdos.png" alt="charmander"></td>
+                <td>Elétrico/Voador</td>
+            </tr>
+            <tr class="fogo">
+                <td>Moltres <img class="icon" src="moltres.png" alt="charmander"></td>
+                <td>Fogo/Voador</td>
+            </tr>
+            <tr class="dragao">
+                <td>Dratini <img class="icon" src="dratini.png" alt="charmander"></td>
+                <td>Dragão</td>
+            </tr>
+            <tr class="dragao">
+                <td>Dragonair <img class="icon" src="dragonair.png" alt="charmander"></td>
+                <td>Dragão</td>
+            </tr>
+            <tr class="dragao">
+                <td>Dragonite <img class="icon" src="dragonite.png" alt="charmander"></td>
+                <td>Dragão</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Mewtwo <img class="icon" src="mewtwo.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Mew <br><img class="icon" src="mew.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td>151</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
