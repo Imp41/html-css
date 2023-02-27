@@ -18,8 +18,10 @@
         }
 
         h1 {
-            font-size: 30px;
-        }
+            font-size: 38px;
+            color: #f8e8be;
+        }      
+
         table {
             width: 330px;
             margin: auto;
@@ -32,7 +34,12 @@
             border: 1px solid black;
             padding: 14px;
         }
-
+        
+        thead > tr > th {
+            position: sticky; /* Deixa o thead fixo */
+            top: -1px;
+            background-color: #383838;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -119,8 +126,8 @@
     <table>
         <thead>
             <tr>
-                <th>Pokémon</th>
-                <th>Tipo</th>
+                <th scope="col">Pokémon</th>
+                <th scope="col">Tipo</th>
             </tr>
         </thead>
         <tbody>
@@ -732,7 +739,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td>151</td>
             </tr>
         </tfoot>
