@@ -7,14 +7,13 @@
     <title>Tabelas</title>
     <style>
         
-        #logo {
+        .logo {
             max-width: 50vh;
         }
         body {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             background-image: url(kanto.png);
-
         }
 
         h1 {
@@ -23,22 +22,19 @@
         }      
 
         table {
-            
-            margin: auto;
             font-size: 2vh;
-            width:22% ;
-        
+            justify-content: space-between
         }
 
         td, th {
             border: 1px solid black;
-            padding: 14px;
+            padding: 1vw;
             
         }
         
         thead > tr > th {
             position: sticky; /* Deixa o thead fixo */
-            top: 0px;
+            top: 3px;
             background-color: #383838;
             color: white;
         }
@@ -103,8 +99,23 @@
         .dragao {
             background-color: #7038F8;
         }
-/* FIM DOS TIPOS */
 
+        .sombrio {
+            background-color:  #705848;
+        }
+
+        .aço {
+            background-color: #B8B8D0;
+        }
+/* FIM DOS TIPOS */
+        #div1 {
+            float: left;
+        }
+
+        #div2 {
+            
+            
+        }
         .icon {
             display: inline-block;
             margin: 0vh 10vh 0vh 10vh;           
@@ -114,8 +125,8 @@
     </style>
 </head>
 <body>
-    <img id="logo" src="pokemonlogo.png" alt="pkmnlogo">
-    <h1>Pokédex de Kanto</h1>
+    <img class="logo" src="pokemonlogo.png" alt="pkmnlogo">
+    <h1>As várias Pokédex</h1>
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
@@ -126,6 +137,7 @@
             TFOOT
                 TR, TD, TH
     -->
+    <div id="div1">
     <table>
         <thead>
             <tr>
@@ -135,610 +147,1025 @@
         </thead>
         <tbody>
             <tr class="planta">
-                <td>Bulbasaur <img class="icon" src="bulbasaur.png" alt="bulbasaur"></td>
+                <td>Bulbasaur <br> <img class="icon" src="pokeicon/bulbasaur.png" alt="bulbasaur"></td>
                 <td>Planta</td>
             </tr>
             <tr class="planta">
-                <td>Ivysaur <img class="icon" src="ivysaur.png" alt="ivysaur"></td>
+                <td>Ivysaur <br> <img class="icon" src="pokeicon/ivysaur.png" alt="ivysaur"></td>
                 <td>Planta</td>
             </tr>
             <tr class="planta">
-                <td>Venusaur <img class="icon" src="venusaur.png" alt="ivysaur"></td>
+                <td>Venusaur <br> <img class="icon" src="pokeicon/venusaur.png" alt="ivysaur"></td>
                 <td>Planta/Venenoso</td>
             </tr>
             <tr class="fogo">
-                <td>Charmander <img class="icon" src="charmander.png" alt="charmander"></td>
+                <td>Charmander <br> <img class="icon" src="pokeicon/charmander.png" alt="charmander"></td>
                 <td>Fogo</td>
             </tr>
             <tr class="fogo">
-                <td>Charmeleon <img class="icon" src="charmeleon.png" alt="charmander"></td>
+                <td>Charmeleon <br> <img class="icon" src="pokeicon/charmeleon.png" alt="charmander"></td>
                 <td>Fogo</td>
             </tr>
             <tr class="fogo">
-                <td>Charizard <img class="icon" src="charizard.png" alt="charmander"></td>
+                <td>Charizard <br> <img class="icon" src="pokeicon/charizard.png" alt="charmander"></td>
                 <td>Fogo/Voador</td>
             </tr>
             <tr class="agua">
-                <td>Squirtle <img class="icon" src="squirtle.png" alt="charmander"></td>
+                <td>Squirtle <br> <img class="icon" src="pokeicon/squirtle.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Wartortle <img class="icon" src="wartortle.png" alt="charmander"></td>
+                <td>Wartortle <br> <img class="icon" src="pokeicon/wartortle.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Blastoise <img class="icon" src="blastoise.png" alt="charmander"></td>
+                <td>Blastoise <br> <img class="icon" src="pokeicon/blastoise.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="inseto">
-                <td>Caterpie <img class="icon" src="caterpie.png" alt="charmander"></td>
+                <td>Caterpie <br> <img class="icon" src="pokeicon/caterpie.png" alt="charmander"></td>
                 <td>Inseto</td>
             </tr>
             <tr class="inseto">
-                <td>Metapod <img class="icon" src="metapod.png" alt="charmander"></td>
+                <td>Metapod <br> <img class="icon" src="pokeicon/metapod.png" alt="charmander"></td>
                 <td>Inseto</td>
             </tr>
             <tr class="inseto">
-                <td>Butterfree <img class="icon" src="buterfree.png" alt="charmander"></td>
+                <td>Butterfree <br> <img class="icon" src="pokeicon/buterfree.png" alt="charmander"></td>
                 <td>Inseto/Venenoso</td>
             </tr>
             <tr class="inseto">
-                <td>Weedle <img class="icon" src="weedle.png" alt="charmander"></td>
+                <td>Weedle <br> <img class="icon" src="pokeicon/weedle.png" alt="charmander"></td>
                 <td>Inseto/Venenoso</td>
             </tr>
             <tr class="inseto">
-                <td>Kakuna <img class="icon" src="kakuna.png" alt="charmander"></td>
+                <td>Kakuna <br> <img class="icon" src="pokeicon/kakuna.png" alt="charmander"></td>
                 <td>Inseto/Venenoso</td>
             </tr>
             <tr class="inseto">
-                <td>Beedrill <img class="icon" src="beedrill.png" alt="charmander"></td>
+                <td>Beedrill <br> <img class="icon" src="pokeicon/beedrill.png" alt="charmander"></td>
                 <td>Inseto/Venenoso</td>
             </tr>
             <tr class="normal">
-                <td>Pidgey <img class="icon" src="pidgey.png" alt="charmander"></td>
+                <td>Pidgey <br> <img class="icon" src="pokeicon/pidgey.png" alt="charmander"></td>
                 <td>Normal/Voador</td>
             </tr>
             <tr class="normal">
-                <td>Pidgeotto <img class="icon" src="pidgeotto.png" alt="charmander"></td>
+                <td>Pidgeotto <br> <img class="icon" src="pokeicon/pidgeotto.png" alt="charmander"></td>
                 <td>Normal/Voador</td>
             </tr>
             <tr class="normal">
-                <td>Pidgeot <img class="icon" src="pidgeot.png" alt="charmander"></td>
+                <td>Pidgeot <br> <img class="icon" src="pokeicon/pidgeot.png" alt="charmander"></td>
                 <td>Normal/Voador</td>
             </tr>
             <tr class="normal">
-                <td>Rattata <img class="icon" src="rattata.png" alt="charmander"></td>
+                <td>Rattata <br> <img class="icon" src="pokeicon/rattata.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="normal">
-                <td>Raticate <img class="icon" src="raticate.png" alt="charmander"></td>
+                <td>Raticate <br> <img class="icon" src="pokeicon/raticate.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="normal">
-                <td>Spearow <img class="icon" src="spearow.png" alt="charmander"></td>
+                <td>Spearow <br> <img class="icon" src="pokeicon/spearow.png" alt="charmander"></td>
                 <td>Normal/Voador</td>
             </tr>
             <tr class="normal">
-                <td>Fearow <img class="icon" src="fearow.png" alt="charmander"></td>
+                <td>Fearow <br> <img class="icon" src="pokeicon/fearow.png" alt="charmander"></td>
                 <td>Normal/Voador</td>
             </tr>
             <tr class="venenoso">
-                <td>Ekans <img class="icon" src="ekans.png" alt="charmander"></td>
+                <td>Ekans <br> <img class="icon" src="pokeicon/ekans.png" alt="charmander"></td>
                 <td>Venenoso</td>
             </tr>
             <tr class="venenoso">
-                <td>Arbok <img class="icon" src="arbok.png" alt="charmander"></td>
+                <td>Arbok <br> <img class="icon" src="pokeicon/arbok.png" alt="charmander"></td>
                 <td>Venenoso</td>
             </tr>
             <tr class="eletrico">
-                <td>Pikachu <img class="icon" src="pikachu.png" alt="charmander"></td>
+                <td>Pikachu <br> <img class="icon" src="pokeicon/pikachu.png" alt="charmander"></td>
                 <td>Elétrico</td>
             </tr>
             <tr class="eletrico">
-                <td>Raichu <img class="icon" src="raichu.png" alt="charmander"></td>
+                <td>Raichu <br> <img class="icon" src="pokeicon/raichu.png" alt="charmander"></td>
                 <td>Elétrico</td>
             </tr>
             <tr class="terra">
-                <td>Sandshrew <img class="icon" src="sandshrew.png" alt="charmander"></td>
+                <td>Sandshrew <br> <img class="icon" src="pokeicon/sandshrew.png" alt="charmander"></td>
                 <td>Terra</td>
             </tr>
             <tr class="terra">
-                <td>Sandslash <img class="icon" src="sandslash.png" alt="charmander"></td>
+                <td>Sandslash <br> <img class="icon" src="pokeicon/sandslash.png" alt="charmander"></td>
                 <td>Terra</td>
             </tr>
             <tr class="venenoso">
-                <td>Nidoran♀ <img class="icon" src="nidoranf.png" alt="charmander"></td>
+                <td>Nidoran♀ <br> <img class="icon" src="pokeicon/nidoranf.png" alt="charmander"></td>
                 <td>Venenoso</td>
             </tr>
             <tr class="venenoso">
-                <td>Nidorina <img class="icon" src="nidorina.png" alt="charmander"></td>
+                <td>Nidorina <br> <img class="icon" src="pokeicon/nidorina.png" alt="charmander"></td>
                 <td>Venenoso</td>
             </tr>
             <tr class="venenoso">
-                <td>Nidoqueen <img class="icon" src="nidoqueen.png" alt="charmander"></td>
+                <td>Nidoqueen <br> <img class="icon" src="pokeicon/nidoqueen.png" alt="charmander"></td>
                 <td>Venenoso/Terra</td>
             </tr>
             <tr class="venenoso">
-                <td>Nidoran♂ <img class="icon" src="nidoranm.png" alt="charmander"></td>
+                <td>Nidoran♂ <br> <img class="icon" src="pokeicon/nidoranm.png" alt="charmander"></td>
                 <td>Venenoso</td>
             </tr>
             <tr class="venenoso">
-                <td>Nidorino <img class="icon" src="nidorino.png" alt="charmander"></td>
+                <td>Nidorino <br> <img class="icon" src="pokeicon/nidorino.png" alt="charmander"></td>
                 <td>Venenoso</td>
             </tr>
             <tr class="venenoso">
-                <td>Nidoking <img class="icon" src="nidoking.png" alt="charmander"></td>
+                <td>Nidoking <br> <img class="icon" src="pokeicon/nidoking.png" alt="charmander"></td>
                 <td>Venenoso/Terra</td>
             </tr>
             <tr class="normal">
-                <td>Clefairy <img class="icon" src="clefairy.png" alt="charmander"></td>
+                <td>Clefairy <br> <img class="icon" src="pokeicon/clefairy.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="normal">
-                <td>Clefable <img class="icon" src="clefable.png" alt="charmander"></td>
+                <td>Clefable <br> <img class="icon" src="pokeicon/clefable.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="fogo">
-                <td>Vulpix <img class="icon" src="vulpix.png" alt="charmander"></td>
+                <td>Vulpix <br> <img class="icon" src="pokeicon/vulpix.png" alt="charmander"></td>
                 <td>Fogo</td>
             </tr>
             <tr class="fogo">
-                <td>Ninetales <img class="icon" src="ninetales.png" alt="charmander"></td>
+                <td>Ninetales <br> <img class="icon" src="pokeicon/ninetales.png" alt="charmander"></td>
                 <td>Fogo</td>
             </tr>
             <tr class="normal">
-                <td>Jigglypuff <img class="icon" src="jigglypuff.png" alt="charmander"></td>
+                <td>Jigglypuff <br> <img class="icon" src="pokeicon/jigglypuff.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="normal">
-                <td>Wigglytuff <img class="icon" src="wigglytuff.png" alt="charmander"></td>
+                <td>Wigglytuff <br> <img class="icon" src="pokeicon/wigglytuff.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="venenoso">
-                <td>Zubat <br><img class="icon" src="zubat.png" alt="charmander"></td>
+                <td>Zubat <br> <img class="icon" src="pokeicon/zubat.png" alt="charmander"></td>
                 <td>Venenoso/Voador</td>
             </tr>
             <tr class="venenoso">
-                <td>Golbat <img class="icon" src="golbat.png" alt="charmander"></td>
+                <td>Golbat <br> <img class="icon" src="pokeicon/golbat.png" alt="charmander"></td>
                 <td>Venenoso/Voador</td>
             </tr>
             <tr class="planta">
-                <td>Oddish <img class="icon" src="oddish.png" alt="charmander"></td>
+                <td>Oddish <br> <img class="icon" src="pokeicon/oddish.png" alt="charmander"></td>
                 <td>Planta/Venenoso</td>
             </tr>
             <tr class="planta">
-                <td>Gloom <img class="icon" src="gloom.png" alt="charmander"></td>
+                <td>Gloom <br> <img class="icon" src="pokeicon/gloom.png" alt="charmander"></td>
                 <td>Planta/Venenoso</td>
             </tr>
             <tr class="planta">
-                <td>Vileplume <img class="icon" src="vileplume.png" alt="charmander"></td>
+                <td>Vileplume <br> <img class="icon" src="pokeicon/vileplume.png" alt="charmander"></td>
                 <td>Planta/Venenoso</td>
             </tr>
             <tr class="inseto">
-                <td>Paras <img class="icon" src="paras.png" alt="charmander"></td>
+                <td>Paras <br> <img class="icon" src="pokeicon/paras.png" alt="charmander"></td>
                 <td>Inseto/Planta</td>
             </tr>
             <tr class="inseto">
-                <td>Parasect <img class="icon" src="parasect.png" alt="charmander"></td>
+                <td>Parasect <br> <img class="icon" src="pokeicon/parasect.png" alt="charmander"></td>
                 <td>Inseto/Planta</td>
             </tr>
             <tr class="inseto">
-                <td>Venonat <img class="icon" src="venonat.png" alt="charmander"></td>
+                <td>Venonat <br> <img class="icon" src="pokeicon/venonat.png" alt="charmander"></td>
                 <td>Inseto/Venenoso</td>
             </tr>
             <tr class="inseto">
-                <td>Venomoth <img class="icon" src="venomoth.png" alt="charmander"></td>
+                <td>Venomoth <br> <img class="icon" src="pokeicon/venomoth.png" alt="charmander"></td>
                 <td>Inseto/Venenoso</td>
             </tr>
             <tr class="terra">
-                <td>Diglett <img class="icon" src="diglett.png" alt="charmander"></td>
+                <td>Diglett <br> <img class="icon" src="pokeicon/diglett.png" alt="charmander"></td>
                 <td>Terra</td>
             </tr>
             <tr class="terra">
-                <td>Dugtrio <img class="icon" src="dugtrio.png" alt="charmander"></td>
+                <td>Dugtrio <br> <img class="icon" src="pokeicon/dugtrio.png" alt="charmander"></td>
                 <td>Terra</td>
             </tr>
             <tr class="normal">
-                <td>Meowth <img class="icon" src="meowth.png" alt="charmander"></td>
+                <td>Meowth <br> <img class="icon" src="pokeicon/meowth.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="normal">
-                <td>Persian <img class="icon" src="persian.png" alt="charmander"></td>
+                <td>Persian <br> <img class="icon" src="pokeicon/persian.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="agua">
-                <td>Psyduck <img class="icon" src="psyduck.png" alt="charmander"></td>
+                <td>Psyduck <br> <img class="icon" src="pokeicon/psyduck.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Golduck <img class="icon" src="golduck.png" alt="charmander"></td>
+                <td>Golduck <br> <img class="icon" src="pokeicon/golduck.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="lutador">
-                <td>Mankey <img class="icon" src="mankey.png" alt="charmander"></td>
+                <td>Mankey <br> <img class="icon" src="pokeicon/mankey.png" alt="charmander"></td>
                 <td>Lutador</td>
             </tr>
             <tr class="lutador">
-                <td>Primeape <img class="icon" src="primeape.png" alt="charmander"></td>
+                <td>Primeape <br> <img class="icon" src="pokeicon/primeape.png" alt="charmander"></td>
                 <td>Lutador</td>
             </tr>
             <tr class="fogo">
-                <td>Growlithe <img class="icon" src="growlithe.png" alt="charmander"></td>
+                <td>Growlithe <br> <img class="icon" src="pokeicon/growlithe.png" alt="charmander"></td>
                 <td>Fogo</td>
             </tr>
             <tr class="fogo">
-                <td>Arcanine <img class="icon" src="arcanine.png" alt="charmander"></td>
+                <td>Arcanine <br> <img class="icon" src="pokeicon/arcanine.png" alt="charmander"></td>
                 <td>Fogo</td>
             </tr>
             <tr class="agua">
-                <td>Poliwag <img class="icon" src="poliwag.png" alt="charmander"></td>
+                <td>Poliwag <br> <img class="icon" src="pokeicon/poliwag.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Poliwhirl <img class="icon" src="poliwhirl.png" alt="charmander"></td>
+                <td>Poliwhirl <br> <img class="icon" src="pokeicon/poliwhirl.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Poliwrath <img class="icon" src="poliwrath.png" alt="charmander"></td>
+                <td>Poliwrath <br> <img class="icon" src="pokeicon/poliwrath.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="psiquico">
-                <td>Abra <br> <img class="icon" src="abra.png" alt="charmander"></td>
+                <td>Abra <br> <img class="icon" src="pokeicon/abra.png" alt="charmander"></td>
                 <td>Psíquico</td>
             </tr>
             <tr class="psiquico">
-                <td>Kadabra <img class="icon" src="kadabra.png" alt="charmander"></td>
+                <td>Kadabra <br> <img class="icon" src="pokeicon/kadabra.png" alt="charmander"></td>
                 <td>Psíquico</td>
             </tr>
             <tr class="psiquico">
-                <td>Alakazam <img class="icon" src="alakazam.png" alt="charmander"></td>
+                <td>Alakazam <br> <img class="icon" src="pokeicon/alakazam.png" alt="charmander"></td>
                 <td>Psíquico</td>
             </tr>
             <tr class="lutador">
-                <td>Machop <img class="icon" src="machop.png" alt="charmander"></td>
+                <td>Machop <br> <img class="icon" src="pokeicon/machop.png" alt="charmander"></td>
                 <td>Lutador</td>
             </tr>
             <tr class="lutador">
-                <td>Machoke <img class="icon" src="machoke.png" alt="charmander"></td>
+                <td>Machoke <br> <img class="icon" src="pokeicon/machoke.png" alt="charmander"></td>
                 <td>Lutador</td>
             </tr>
             <tr class="lutador">
-                <td>Machamp <img class="icon" src="machamp.png" alt="charmander"></td>
+                <td>Machamp <br> <img class="icon" src="pokeicon/machamp.png" alt="charmander"></td>
                 <td>Lutador</td>
             </tr>
             <tr class="planta">
-                <td>Bellsprout <img class="icon" src="bellsprout.png" alt="charmander"></td>
+                <td>Bellsprout <br> <img class="icon" src="pokeicon/bellsprout.png" alt="charmander"></td>
                 <td>Planta/Venenoso</td>
             </tr>
             <tr class="planta">
-                <td>Weepinbell <img class="icon" src="weepinbell.png" alt="charmander"></td>
+                <td>Weepinbell <br> <img class="icon" src="pokeicon/weepinbell.png" alt="charmander"></td>
                 <td>Planta/Venenoso</td>
             </tr>
             <tr class="planta">
-                <td>Victreebel <img class="icon" src="victreebel.png" alt="charmander"></td>
+                <td>Victreebel <br> <img class="icon" src="pokeicon/victreebel.png" alt="charmander"></td>
                 <td>Planta/Venenoso</td>
             </tr>
             <tr class="agua">
-                <td>Tentacool <img class="icon" src="tentacool.png" alt="charmander"></td>
+                <td>Tentacool <br> <img class="icon" src="pokeicon/tentacool.png" alt="charmander"></td>
                 <td>Água/Venenoso</td>
             </tr>
             <tr class="agua">
-                <td>Tentacruel <img class="icon" src="tentacruel.png" alt="charmander"></td>
+                <td>Tentacruel <br> <img class="icon" src="pokeicon/tentacruel.png" alt="charmander"></td>
                 <td>Água/Venenoso</td>
             </tr>
             <tr class="pedra">
-                <td>Geodude <img class="icon" src="geodude.png" alt="charmander"></td>
+                <td>Geodude <br> <img class="icon" src="pokeicon/geodude.png" alt="charmander"></td>
                 <td>Pedra</td>
             </tr>
             <tr class="pedra">
-                <td>Graveler <img class="icon" src="graveler.png" alt="charmander"></td>
+                <td>Graveler <br> <img class="icon" src="pokeicon/graveler.png" alt="charmander"></td>
                 <td>Pedra</td>
             </tr>
             <tr class="pedra">
-                <td>Golem <img class="icon" src="golem.png" alt="charmander"></td>
+                <td>Golem <br> <img class="icon" src="pokeicon/golem.png" alt="charmander"></td>
                 <td>Pedra</td>
             </tr>
             <tr class="fogo">
-                <td>Ponyta <img class="icon" src="ponyta.png" alt="charmander"></td>
+                <td>Ponyta <br> <img class="icon" src="pokeicon/ponyta.png" alt="charmander"></td>
                 <td>Fogo</td>
             </tr>
             <tr class="fogo">
-                <td>Rapidash <img class="icon" src="rapidash.png" alt="charmander"></td>
+                <td>Rapidash <br> <img class="icon" src="pokeicon/rapidash.png" alt="charmander"></td>
                 <td>Fogo</td>
             </tr>
             <tr class="agua">
-                <td>Slowpoke <img class="icon" src="slowpoke.png" alt="charmander"></td>
+                <td>Slowpoke <br> <img class="icon" src="pokeicon/slowpoke.png" alt="charmander"></td>
                 <td>Água/Psíquico</td>
             </tr>
             <tr class="agua">
-                <td>Slowbro <img class="icon" src="slowbro.png" alt="charmander"></td>
+                <td>Slowbro <br> <img class="icon" src="pokeicon/slowbro.png" alt="charmander"></td>
                 <td>Água/Psíquico</td>
             </tr>
             <tr class="eletrico">
-                <td>Magnemite <img class="icon" src="magnemite.png" alt="charmander"></td>
+                <td>Magnemite <br> <img class="icon" src="pokeicon/magnemite.png" alt="charmander"></td>
                 <td>Elétrico/Aço</td>
             </tr>
             <tr class="eletrico">
-                <td>Magneton <img class="icon" src="magneton.png" alt="charmander"></td>
+                <td>Magneton <br> <img class="icon" src="pokeicon/magneton.png" alt="charmander"></td>
                 <td>Elétrico/Aço</td>
             </tr>
             <tr class="normal">
-                <td>Farfetch'd <img class="icon" src="farfetch'd.png" alt="charmander"></td>
+                <td>Farfetch'd <br> <img class="icon" src="pokeicon/farfetch'd.png" alt="charmander"></td>
                 <td>Normal/Voador</td>
             </tr>
             <tr class="normal">
-                <td>Doduo <img class="icon" src="doduo.png" alt="charmander"></td>
+                <td>Doduo <br> <img class="icon" src="pokeicon/doduo.png" alt="charmander"></td>
                 <td>Normal/Voador</td>
             </tr>
             <tr class="normal">
-                <td>Dodrio <img class="icon" src="dodrio.png" alt="charmander"></td>
+                <td>Dodrio <br> <img class="icon" src="pokeicon/dodrio.png" alt="charmander"></td>
                 <td>Normal/Voador</td>
             </tr>
             <tr class="agua">
-                <td>Seel <br><img class="icon" src="seel.png" alt="charmander"></td>
+                <td>Seel <br> <img class="icon" src="pokeicon/seel.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Dewgong <img class="icon" src="dewgong.png" alt="charmander"></td>
+                <td>Dewgong <br> <img class="icon" src="pokeicon/dewgong.png" alt="charmander"></td>
                 <td>Água/Gelo</td>
             </tr>
             <tr class="venenoso">
-                <td>Grimer <img class="icon" src="grimer.png" alt="charmander"></td>
+                <td>Grimer <br> <img class="icon" src="pokeicon/grimer.png" alt="charmander"></td>
                 <td>Venenoso</td>
             </tr>
             <tr class="venenoso">
-                <td>Muk <br><img class="icon" src="muk.png" alt="charmander"></td>
+                <td>Muk <br> <img class="icon" src="pokeicon/muk.png" alt="charmander"></td>
                 <td>Venenoso</td>
             </tr>
             <tr class="agua">
-                <td>Shellder <img class="icon" src="shellder.png" alt="charmander"></td>
+                <td>Shellder <br> <img class="icon" src="pokeicon/shellder.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Cloyster <img class="icon" src="cloyster.png" alt="charmander"></td>
+                <td>Cloyster <br> <img class="icon" src="pokeicon/cloyster.png" alt="charmander"></td>
                 <td>Água/Gelo</td>
             </tr>
             <tr class="fantasma">
-                <td>Gastly <img class="icon" src="gastly.png" alt="charmander"></td>
+                <td>Gastly <br> <img class="icon" src="pokeicon/gastly.png" alt="charmander"></td>
                 <td>Fantasma</td>
             </tr>
             <tr class="fantasma">
-                <td>Haunter <img class="icon" src="haunter.png" alt="charmander"></td>
+                <td>Haunter <br> <img class="icon" src="pokeicon/haunter.png" alt="charmander"></td>
                 <td>Fantasma</td>
             </tr>
             <tr class="fantasma">
-                <td>Gengar <img class="icon" src="gengar.png" alt="charmander"></td>
+                <td>Gengar <br> <img class="icon" src="pokeicon/gengar.png" alt="charmander"></td>
                 <td>Fantasma</td>
             </tr>
             <tr class="pedra">
-                <td>Onix <br> <img class="icon" src="onix.png" alt="charmander"></td>
+                <td>Onix <br> <img class="icon" src="pokeicon/onix.png" alt="charmander"></td>
                 <td>Pedra/Terra</td>
             </tr>
             <tr class="psiquico">
-                <td>Drowzee <img class="icon" src="drowzee.png" alt="charmander"></td>
+                <td>Drowzee <br> <img class="icon" src="pokeicon/drowzee.png" alt="charmander"></td>
                 <td>Psíquico</td>
             </tr>
             <tr class="psiquico">
-                <td>Hypno <img class="icon" src="hypno.png" alt="charmander"></td>
+                <td>Hypno <br> <img class="icon" src="pokeicon/hypno.png" alt="charmander"></td>
                 <td>Psíquico</td>
             </tr>
             <tr class="agua">
-                <td>Krabby <img class="icon" src="krabby.png" alt="charmander"></td>
+                <td>Krabby <br> <img class="icon" src="pokeicon/krabby.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Kingler <img class="icon" src="kingler.png" alt="charmander"></td>
+                <td>Kingler <br> <img class="icon" src="pokeicon/kingler.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="eletrico">
-                <td>Voltorb <img class="icon" src="voltorb.png" alt="charmander"></td>
+                <td>Voltorb <br> <img class="icon" src="pokeicon/voltorb.png" alt="charmander"></td>
                 <td>Elétrico</td>
             </tr>
             <tr class="eletrico">
-                <td>Electrode <img class="icon" src="electrode.png" alt="charmander"></td>
+                <td>Electrode <br> <img class="icon" src="pokeicon/electrode.png" alt="charmander"></td>
                 <td>Elétrico</td>
             </tr>
             <tr class="planta">
-                <td>Exeggcute <img class="icon" src="exeggcute.png" alt="charmander"></td>
+                <td>Exeggcute <br> <img class="icon" src="pokeicon/exeggcute.png" alt="charmander"></td>
                 <td>Planta/Psíquico</td>
             </tr>
             <tr class="planta">
-                <td>Exeggutor <img class="icon" src="exeggutor.png" alt="charmander"></td>
+                <td>Exeggutor <br> <img class="icon" src="pokeicon/exeggutor.png" alt="charmander"></td>
                 <td>Planta/Psíquico</td>
             </tr>
             <tr class="terra">
-                <td>Cubone <img class="icon" src="cubone.png" alt="charmander"></td>
+                <td>Cubone <br> <img class="icon" src="pokeicon/cubone.png" alt="charmander"></td>
                 <td>Terra</td>
             </tr>
             <tr class="terra">
-                <td>Marowak <img class="icon" src="marowak.png" alt="charmander"></td>
+                <td>Marowak <br> <img class="icon" src="pokeicon/marowak.png" alt="charmander"></td>
                 <td>Terra</td>
             </tr>
             <tr class="lutador">
-                <td>Hitmonlee <img class="icon" src="hitmonlee.png" alt="charmander"></td>
+                <td>Hitmonlee <br> <img class="icon" src="pokeicon/hitmonlee.png" alt="charmander"></td>
                 <td>Lutador</td>
             </tr>
             <tr class="lutador">
-                <td>Hitmonchan <img class="icon" src="hitmonchan.png" alt="charmander"></td>
+                <td>Hitmonchan <br> <img class="icon" src="pokeicon/hitmonchan.png" alt="charmander"></td>
                 <td>Lutador</td>
             </tr>
             <tr class="normal">
-                <td>Lickitung <img class="icon" src="lickitung.png" alt="charmander"></td>
+                <td>Lickitung <br> <img class="icon" src="pokeicon/lickitung.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="venenoso">
-                <td>Koffing <img class="icon" src="koffing.png" alt="charmander"></td>
+                <td>Koffing <br> <br> <img class="icon" src="pokeicon/koffing.png" alt="charmander"></td>
                 <td>Venenoso</td>
             </tr>
             <tr class="venenoso">
-                <td>Weezing <img class="icon" src="weezing.png" alt="charmander"></td>
+                <td>Weezing <br> <img class="icon" src="pokeicon/weezing.png" alt="charmander"></td>
                 <td>Venenoso</td>
             </tr>
             <tr class="terra">
-                <td>Rhyhorn <img class="icon" src="rhyhorn.png" alt="charmander"></td>
+                <td>Rhyhorn <br> <img class="icon" src="pokeicon/rhyhorn.png" alt="charmander"></td>
                 <td>Terra/Pedra</td>
             </tr>
             <tr class="terra">
-                <td>Rhydon <img class="icon" src="rhydon.png" alt="charmander"></td>
+                <td>Rhydon <br> <img class="icon" src="pokeicon/rhydon.png" alt="charmander"></td>
                 <td>Terra/Pedra</td>
             </tr>
             <tr class="normal">
-                <td>Chansey <img class="icon" src="chansey.png" alt="charmander"></td>
+                <td>Chansey <br> <img class="icon" src="pokeicon/chansey.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="planta">
-                <td>Tangela <img class="icon" src="tangela.png" alt="charmander"></td>
+                <td>Tangela <br> <img class="icon" src="pokeicon/tangela.png" alt="charmander"></td>
                 <td>Planta</td>
             </tr>
             <tr class="normal">
-                <td>Kangaskhan <img class="icon" src="kangaskhan.png" alt="charmander"></td>
+                <td>Kangaskhan <br> <img class="icon" src="pokeicon/kangaskhan.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="agua">
-                <td>Horsea <img class="icon" src="cloyster.png" alt="charmander"></td>
+                <td>Horsea <br> <img class="icon" src="pokeicon/cloyster.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Seadra <img class="icon" src="seadra.png" alt="charmander"></td>
+                <td>Seadra <br> <img class="icon" src="pokeicon/seadra.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Goldeen <img class="icon" src="goldeen.png" alt="charmander"></td>
+                <td>Goldeen <br> <img class="icon" src="pokeicon/goldeen.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Seaking <img class="icon" src="seaking.png" alt="charmander"></td>
+                <td>Seaking <br> <img class="icon" src="pokeicon/seaking.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Staryu <img class="icon" src="staryu.png" alt="charmander"></td>
+                <td>Staryu <br> <img class="icon" src="pokeicon/staryu.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Starmie <img class="icon" src="starmie.png" alt="charmander"></td>
+                <td>Starmie <br> <img class="icon" src="pokeicon/starmie.png" alt="charmander"></td>
                 <td>Água/Psíquico</td>
             </tr>
             <tr class="psiquico">
-                <td>Mr. Mime <img class="icon" src="mrmime.png" alt="charmander"></td>
+                <td>Mr. Mime <br> <img class="icon" src="pokeicon/mrmime.png" alt="charmander"></td>
                 <td>Psíquico</td>
             </tr>
             <tr class="inseto">
-                <td>Scyther <img class="icon" src="scyther.png" alt="charmander"></td>
+                <td>Scyther <br> <img class="icon" src="pokeicon/scyther.png" alt="charmander"></td>
                 <td>Inseto/Voador</td>
             </tr>
             <tr class="gelo">
-                <td>Jynx <br> <img class="icon" src="jynx.png" alt="charmander"></td>
+                <td>Jynx <br> <img class="icon" src="pokeicon/jynx.png" alt="charmander"></td>
                 <td>Gelo/Psíquico</td>
             </tr>
             <tr class="eletrico">
-                <td>Electabuzz <img class="icon" src="electabuzz.png" alt="charmander"></td>
+                <td>Electabuzz <br> <img class="icon" src="pokeicon/electabuzz.png" alt="charmander"></td>
                 <td>Elétrico</td>
             </tr>
             <tr class="fogo">
-                <td>Magmar <img class="icon" src="magmar.png" alt="charmander"></td>
+                <td>Magmar <br> <img class="icon" src="pokeicon/magmar.png" alt="charmander"></td>
                 <td>Fogo</td>
             </tr>
             <tr class="inseto">
-                <td>Pinsir <img class="icon" src="pinsir.png" alt="charmander"></td>
+                <td>Pinsir <br> <img class="icon" src="pokeicon/pinsir.png" alt="charmander"></td>
                 <td>Inseto</td>
             </tr>
             <tr class="normal">
-                <td>Tauros <img class="icon" src="tauros.png" alt="charmander"></td>
+                <td>Tauros <br> <img class="icon" src="pokeicon/tauros.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="agua">
-                <td>Magikarp <img class="icon" src="magikarp.png" alt="charmander"></td>
+                <td>Magikarp <br> <img class="icon" src="pokeicon/magikarp.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="agua">
-                <td>Gyarados <img class="icon" src="gyarados.png" alt="charmander"></td>
+                <td>Gyarados <br> <img class="icon" src="pokeicon/gyarados.png" alt="charmander"></td>
                 <td>Água/Voador</td>
             </tr>
             <tr class="agua">
-                <td>Lapras <img class="icon" src="lapras.png" alt="charmander"></td>
+                <td>Lapras <br> <img class="icon" src="pokeicon/lapras.png" alt="charmander"></td>
                 <td>Água/Gelo</td>
             </tr>
             <tr class="normal">
-                <td>Ditto <br> <img class="icon" src="ditto.png" alt="charmander"></td>
+                <td>Ditto <br> <img class="icon" src="pokeicon/ditto.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="normal">
-                <td>Eevee <img class="icon" src="eevee.png" alt="charmander"></td>
+                <td>Eevee <br> <img class="icon" src="pokeicon/eevee.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="agua">
-                <td>Vaporeon <img class="icon" src="vaporeon.png" alt="charmander"></td>
+                <td>Vaporeon <br> <img class="icon" src="pokeicon/vaporeon.png" alt="charmander"></td>
                 <td>Água</td>
             </tr>
             <tr class="eletrico">
-                <td>Jolteon <img class="icon" src="jolteon.png" alt="charmander"></td>
+                <td>Jolteon <br> <img class="icon" src="pokeicon/jolteon.png" alt="charmander"></td>
                 <td>Elétrico</td>
             </tr>
             <tr class="fogo">
-                <td>Flareon <img class="icon" src="flareon.png" alt="charmander"></td>
+                <td>Flareon <br> <img class="icon" src="pokeicon/flareon.png" alt="charmander"></td>
                 <td>Fogo</td>
             </tr>
             <tr class="normal">
-                <td>Porygon <img class="icon" src="porygon.png" alt="charmander"></td>
+                <td>Porygon <br> <img class="icon" src="pokeicon/porygon.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="pedra">
-                <td>Omanyte <img class="icon" src="omanyte.png" alt="charmander"></td>
+                <td>Omanyte <br> <img class="icon" src="pokeicon/omanyte.png" alt="charmander"></td>
                 <td>Pedra/Água</td>
             </tr>
             <tr class="pedra">
-                <td>Omastar <img class="icon" src="omastar.png" alt="charmander"></td>
+                <td>Omastar <br> <img class="icon" src="pokeicon/omastar.png" alt="charmander"></td>
                 <td>Pedra/Água</td>
             </tr>
             <tr class="pedra">
-                <td>Kabuto <img class="icon" src="kabuto.png" alt="charmander"></td>
+                <td>Kabuto <br> <img class="icon" src="pokeicon/kabuto.png" alt="charmander"></td>
                 <td>Pedra/Água</td>
             </tr>
             <tr class="pedra">
-                <td>Kabutops <img class="icon" src="kabutops.png" alt="charmander"></td>
+                <td>Kabutops <br> <img class="icon" src="pokeicon/kabutops.png" alt="charmander"></td>
                 <td>Pedra/Água</td>
             </tr>
             <tr class="pedra">
-                <td>Aerodactyl <img class="icon" src="aerodactyl.png" alt="charmander"></td>
+                <td>Aerodactyl <br> <img class="icon" src="pokeicon/aerodactyl.png" alt="charmander"></td>
                 <td>Pedra/Voador</td>
             </tr>
             <tr class="normal">
-                <td>Snorlax <img class="icon" src="snorlax.png" alt="charmander"></td>
+                <td>Snorlax <br> <img class="icon" src="pokeicon/snorlax.png" alt="charmander"></td>
                 <td>Normal</td>
             </tr>
             <tr class="gelo">
-                <td>Articuno <img class="icon" src="articuno.png" alt="charmander"></td>
+                <td>Articuno <br> <img class="icon" src="pokeicon/articuno.png" alt="charmander"></td>
                 <td>Gelo/Voador</td>
             </tr>
             <tr class="eletrico">
-                <td>Zapdos <img class="icon" src="zapdos.png" alt="charmander"></td>
+                <td>Zapdos <br> <img class="icon" src="pokeicon/zapdos.png" alt="charmander"></td>
                 <td>Elétrico/Voador</td>
             </tr>
             <tr class="fogo">
-                <td>Moltres <img class="icon" src="moltres.png" alt="charmander"></td>
+                <td>Moltres <br> <img class="icon" src="pokeicon/moltres.png" alt="charmander"></td>
                 <td>Fogo/Voador</td>
             </tr>
             <tr class="dragao">
-                <td>Dratini <img class="icon" src="dratini.png" alt="charmander"></td>
+                <td>Dratini <br> <img class="icon" src="pokeicon/dratini.png" alt="charmander"></td>
                 <td>Dragão</td>
             </tr>
             <tr class="dragao">
-                <td>Dragonair <img class="icon" src="dragonair.png" alt="charmander"></td>
+                <td>Dragonair <br> <img class="icon" src="pokeicon/dragonair.png" alt="charmander"></td>
                 <td>Dragão</td>
             </tr>
             <tr class="dragao">
-                <td>Dragonite <img class="icon" src="dragonite.png" alt="charmander"></td>
+                <td>Dragonite <br> <img class="icon" src="pokeicon/dragonite.png" alt="charmander"></td>
                 <td>Dragão</td>
             </tr>
             <tr class="psiquico">
-                <td>Mewtwo <img class="icon" src="mewtwo.png" alt="charmander"></td>
+                <td>Mewtwo <br> <img class="icon" src="pokeicon/mewtwo.png" alt="charmander"></td>
                 <td>Psíquico</td>
             </tr>
             <tr class="psiquico">
-                <td>Mew <br><img class="icon" src="mew.png" alt="charmander"></td>
+                <td>Mew <br> <img class="icon" src="pokeicon/mew.png" alt="charmander"></td>
                 <td>Psíquico</td>
             </tr>
+        </tbody>
+    </table>
+    </div>
+ <!-- Fim da 1º Geração-->
 
+
+
+
+ <!-- Início da 2º Geração-->
+ <div id="div2">
+ <table class="table2">
+    <thead>
+        <tr>
+            <th scope="col">Pokémon</th>
+            <th scope="col">Tipo</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr class="planta">
+                <td>Chikorita <br> <img class="icon" src="pokeicon2/chikorita.png" alt="chikorita"></td>
+                <td>Planta</td>
+            </tr>
+            <tr class="planta">
+                <td>Bayleef <br> <img class="icon" src="pokeicon2/bayleef.png" alt="bayleef"></td>
+                <td>Planta</td>
+            </tr>
+            <tr class="planta">
+                <td>Meganium <br> <img class="icon" src="pokeicon2/meganium.png" alt="meganium"></td>
+                <td>Planta/Venenoso</td>
+            </tr>
+            <tr class="fogo">
+                <td>Cyndaquil <br> <img class="icon" src="pokeicon2/cyndaquil.png" alt="cyndaquil"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="fogo">
+                <td>Quilava <br> <img class="icon" src="pokeicon2/quilava.png" alt="quilava"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="fogo">
+                <td>Typhlosion <br> <img class="icon" src="pokeicon2/typhlosion.png" alt="typhlosion"></td>
+                <td>Fogo/Voador</td>
+            </tr>
+            <tr class="agua">
+                <td>Totodile <br> <img class="icon" src="pokeicon2/totodile.png" alt="totodile"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Croconaw <br> <img class="icon" src="pokeicon2/croconaw.png" alt="croconaw"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Feraligatr <br> <img class="icon" src="pokeicon2/feraligatr.png" alt="feraligatr"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="normal">
+                <td>Sentret <br> <img class="icon" src="pokeicon2/sentret.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Furret <br> <img class="icon" src="pokeicon2/furret.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Hoothoot <br> <img class="icon" src="pokeicon2/hoothoot.png" alt="charmander"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="normal">
+                <td>Noctowl <br> <img class="icon" src="pokeicon2/noctowl.png" alt="noctowl"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="inseto">
+                <td>Ledyba <br> <img class="icon" src="pokeicon2/ledyba.png" alt="charmander"></td>
+                <td>Inseto/Voador</td>
+            </tr>
+            <tr class="inseto">
+                <td>Ledian <br> <img class="icon" src="pokeicon2/ledian.png" alt="charmander"></td>
+                <td>Inseto/Voador</td>
+            </tr>
+            <tr class="inseto">
+                <td>Spinarak <br> <img class="icon" src="pokeicon2/spinarak.png" alt="charmander"></td>
+                <td>Inseto/Venenoso</td>
+            </tr>
+            <tr class="inseto">
+                <td>Ariados <br> <img class="icon" src="pokeicon2/ariados.png" alt="charmander"></td>
+                <td>Inseto/Venenoso</td>
+            </tr>
+            <tr class="venenoso">
+                <td>Crobat <br> <img class="icon" src="pokeicon2/crobat.png" alt="bulbasaur"></td>
+                <td>Venenoso/Voador</td>
+            </tr>
+            <tr class="agua">
+                <td>Chinchou <br> <img class="icon" src="pokeicon2/chinchou.png" alt="ivysaur"></td>
+                <td>Água/Elétrico</td>
+            </tr>
+            <tr class="agua">
+                <td>Lanturn <br> <img class="icon" src="pokeicon2/lanturn.png" alt="ivysaur"></td>
+                <td>Água/Elétrico</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Pichu <br> <img class="icon" src="pokeicon2/pichu.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="normal">
+                <td>Cleffa <br> <img class="icon" src="pokeicon2/cleffa.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Togepi <br> <img class="icon" src="pokeicon2/togepi.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Togetic <br> <img class="icon" src="pokeicon2/togetic.png" alt="charmander"></td>
+                <td>Normal/Voador</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Natu <br> <img class="icon" src="pokeicon2/natu.png" alt="charmander"></td>
+                <td>Psíquico/Voador</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Xatu <br> <img class="icon" src="pokeicon2/xatu.png" alt="charmander"></td>
+                <td>Psíquico/Voador</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Mareep <br> <img class="icon" src="pokeicon2/mareep.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Flaaffy <br> <img class="icon" src="pokeicon2/flaaffy.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Ampharos <br> <img class="icon" src="pokeicon2/ampharos.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="planta">
+                <td>Bellossom <br> <img class="icon" src="pokeicon2/bellossom.png" alt="charmander"></td>
+                <td>Planta</td>
+            </tr>
+            <tr class="agua">
+                <td>Marill <br> <img class="icon" src="pokeicon2/marill.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Azumarill <br> <img class="icon" src="pokeicon2/azumarill.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="pedra">
+                <td>Sudowoodo <br> <img class="icon" src="pokeicon2/sudowoodo.png" alt="charmander"></td>
+                <td>Pedra</td>
+            </tr>
+            <tr class="agua">
+                <td>Politoed <br> <img class="icon" src="pokeicon2/politoed.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr> 
+            <tr class="planta">
+                <td>Hoppip <br> <img class="icon" src="pokeicon2/hoppip.png" alt="charmander"></td>
+                <td>Planta/Voador</td>
+            </tr>
+            <tr class="planta">
+                <td>Skiploom <br> <img class="icon" src="pokeicon2/skiploom.png" alt="charmander"></td>
+                <td>Planta/Voador</td>
+            </tr>
+            <tr class="planta">
+                <td>Jumpluff <br> <img class="icon" src="pokeicon2/jumpluff.png" alt="charmander"></td>
+                <td>Planta/Voador</td>
+            </tr>
+            <tr class="normal">
+                <td>Aipom <br> <img class="icon" src="pokeicon2/aipom.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="planta">
+                <td>Sunkern <br> <img class="icon" src="pokeicon2/sunkern.png" alt="charmander"></td>
+                <td>Planta</td>
+            </tr>
+            <tr class="planta">
+                <td>Sunflora <br> <img class="icon" src="pokeicon2/sunflora.png" alt="charmander"></td>
+                <td>Planta</td>
+            </tr>
+            <tr class="inseto">
+                <td>Yanma <br> <img class="icon" src="pokeicon2/yanma.png" alt="charmander"></td>
+                <td>Inseto/Voador</td>
+            </tr>
+            <tr class="agua">
+                <td>Wooper <br> <img class="icon" src="pokeicon2/wooper.png" alt="charmander"></td>
+                <td>Água/Terra</td>
+            </tr>
+            <tr class="agua">
+                <td>Quagsire <br> <img class="icon" src="pokeicon2/quagsire.png" alt="charmander"></td>
+                <td>Água/Terra</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Espeon <br> <img class="icon" src="pokeicon2/espeon.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+            <tr class="sombrio">
+                <td>Umbreon <br> <img class="icon" src="pokeicon2/umbreon.png" alt="charmander"></td>
+                <td>Sombrio</td>
+            </tr>
+            <tr class="sombrio">
+                <td>Murkrow <br> <img class="icon" src="pokeicon2/murkrow.png" alt="charmander"></td>
+                <td>Sombrio/Voador</td>
+            </tr>
+            <tr class="normal">
+                <td>Slowking <br> <img class="icon" src="pokeicon2/slowking.png" alt="charmander"></td>
+                <td>Água/Psíquico</td>
+            </tr>
+            <tr class="fantasma">
+                <td>Misdreavus <br> <img class="icon" src="pokeicon2/misdreavus.png" alt="charmander"></td>
+                <td>Fantasma</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Unown <br> <img class="icon" src="pokeicon2/unownf.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Wobbufett <br> <img class="icon" src="pokeicon2/wobbuffet.png" alt="charmander"></td>
+                <td>Psíquico</td>
+            </tr>
+            <tr class="normal">
+                <td>Girafarig <br> <img class="icon" src="pokeicon2/girafarig.png" alt="charmander"></td>
+                <td>Normal/Psíquico</td>
+            </tr>
+            <tr class="inseto">
+                <td>Pineco <br> <img class="icon" src="pokeicon2/pineco.png" alt="charmander"></td>
+                <td>Inseto</td>
+            </tr>
+            <tr class="inseto">
+                <td>Forretress <br> <img class="icon" src="pokeicon2/forretress.png" alt="charmander"></td>
+                <td>Inseto/Aço</td>
+            </tr>
+            <tr class="normal">
+                <td>Dunsparce <br> <img class="icon" src="pokeicon2/dunsparce.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="terra">
+                <td>Gligar <br> <img class="icon" src="pokeicon2/gligar.png" alt="charmander"></td>
+                <td>Terra/Voador</td>
+            </tr>
+            <tr class="aço">
+                <td>Steelix <br> <img class="icon" src="pokeicon2/steelix.png" alt="charmander"></td>
+                <td>Aço/Terra</td>
+            </tr>
+            <tr class="normal">
+                <td>Snubbul <br> <img class="icon" src="pokeicon2/snubbul.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Granbull <br> <img class="icon" src="pokeicon2/granbull.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="agua">
+                <td>Qwilfish <br> <img class="icon" src="pokeicon2/qwilfish.png" alt="charmander"></td>
+                <td>Água/Venenoso</td>
+            </tr>
+            <tr class="inseto">
+                <td>Scizor <br> <img class="icon" src="pokeicon2/scizor.png" alt="charmander"></td>
+                <td>Inseto/Aço</td>
+            </tr>
+            <tr class="inseto">
+                <td>Shuckle <br> <img class="icon" src="pokeicon2/shuckle.png" alt="charmander"></td>
+                <td>Inseto/Pedra</td>
+            </tr>
+            <tr class="inseto">
+                <td>Heracross <br> <img class="icon" src="pokeicon2/heracross.png" alt="charmander"></td>
+                <td>Inseto/Lutador</td>
+            </tr>
+            <tr class="sombrio">
+                <td>Sneasel <br> <img class="icon" src="pokeicon2/sneasel.png" alt="charmander"></td>
+                <td>Sombrio/Gelo</td>
+            </tr>
+            <tr class="normal">
+                <td>Teddiursa <br> <img class="icon" src="pokeicon2/teddiursa.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Ursaring <br> <img class="icon" src="pokeicon2/ursaring.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="fogo">
+                <td>Slugma <br> <img class="icon" src="pokeicon2/slugma.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="fogo">
+                <td>Magcargo <br> <img class="icon" src="pokeicon2/magcargo.png" alt="charmander"></td>
+                <td>Fogo/Pedra</td>
+            </tr>
+            <tr class="gelo">
+                <td>Swinub <br> <img class="icon" src="pokeicon2/swinub.png" alt="charmander"></td>
+                <td>Gelo/Terra</td>
+            </tr>
+            <tr class="gelo">
+                <td>Piloswine <br> <img class="icon" src="pokeicon2/piloswine.png" alt="charmander"></td>
+                <td>Gelo/Terra</td>
+            </tr>
+            <tr class="agua">
+                <td>Corsola <br> <img class="icon" src="pokeicon2/corsola.png" alt="charmander"></td>
+                <td>Água/Pedra</td>
+            </tr>
+            <tr class="agua">
+                <td>Remoraid <br> <img class="icon" src="pokeicon2/remoraid.png" alt="remoraid"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="agua">
+                <td>Octillery <br> <img class="icon" src="pokeicon2/octillery.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="gelo">
+                <td>Delibird <br> <img class="icon" src="pokeicon2/delibird.png" alt="charmander"></td>
+                <td>Gelo/Voador</td>
+            </tr>
+            <tr class="agua">
+                <td>Mantine <br> <img class="icon" src="pokeicon2/mantine.png" alt="charmander"></td>
+                <td>Água/Voador</td>
+            </tr>
+            <tr class="aço">
+                <td>Skarmory <br> <img class="icon" src="pokeicon2/skarmory.png" alt="charmander"></td>
+                <td>Aço</td>
+            </tr>
+            <tr class="sombrio">
+                <td>Houndour <br> <img class="icon" src="pokeicon2/houndoor.png" alt="charmander"></td>
+                <td>Sombrio/Fogo</td>
+            </tr>
+            <tr class="sombrio">
+                <td>Houndoom <br> <img class="icon" src="pokeicon2/houndoom.png" alt="Houndoom"></td>
+                <td>Sombrio/Fogo</td>
+            </tr>
+            <tr class="agua">
+                <td>Kingdra <br> <img class="icon" src="pokeicon2/kingdra.png" alt="Kingdra"></td>
+                <td>Água/Dragão</td>
+            </tr>
+            <tr class="terra">
+                <td>Phanpy <br> <img class="icon" src="pokeicon2/phanpy.png" alt="Phanpy"></td>
+                <td>Terra</td>
+            </tr>
+            <tr class="terra">
+                <td>Donphan <br> <img class="icon" src="pokeicon2/donphan.png" alt="charmander"></td>
+                <td>Terra</td>
+            </tr>
+            <tr class="normal">
+                <td>Porygon2 <br> <img class="icon" src="pokeicon2/porygon2.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Stantler <br> <img class="icon" src="pokeicon2/stantler.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Smeargle <br> <img class="icon" src="pokeicon2/smeargle.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="lutador">
+                <td>Tyrogue <br> <img class="icon" src="pokeicon2/tyrogue.png" alt="charmander"></td>
+                <td>Lutador</td>
+            </tr>
+            <tr class="lutador">
+                <td>Hitmontop <br> <img class="icon" src="pokeicon2/hitmontop.png" alt="charmander"></td>
+                <td>Lutador</td>
+            </tr>
+            <tr class="gelo">
+                <td>Smoochum <br> <img class="icon" src="pokeicon2/smoochum.png" alt="charmander"></td>
+                <td>Gelo/Psíquico</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Elekid <br> <img class="icon" src="pokeicon2/elekid.png" alt="elekid"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="fogo">
+                <td>Magby <br> <img class="icon" src="pokeicon2/magby.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="normal">
+                <td>Miltank <br> <img class="icon" src="pokeicon2/miltank.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="normal">
+                <td>Blissey <br> <img class="icon" src="pokeicon2/blissey.png" alt="charmander"></td>
+                <td>Normal</td>
+            </tr>
+            <tr class="eletrico">
+                <td>Raikou <br> <img class="icon" src="pokeicon2/raikou.png" alt="charmander"></td>
+                <td>Elétrico</td>
+            </tr>
+            <tr class="fogo">
+                <td>Entei <br> <img class="icon" src="pokeicon2/entei.png" alt="charmander"></td>
+                <td>Fogo</td>
+            </tr>
+            <tr class="agua">
+                <td>Suicune <br> <img class="icon" src="pokeicon2/suicune.png" alt="charmander"></td>
+                <td>Água</td>
+            </tr>
+            <tr class="pedra">
+                <td>Larvitar <br> <img class="icon" src="pokeicon2/larvitar.png" alt="charmander"></td>
+                <td>Pedra/Terra</td>
+            </tr>
+            <tr class="pedra">
+                <td>Pupitar <br> <img class="icon" src="pokeicon2/pupitar.png" alt="charmander"></td>
+                <td>Pedra/Terra</td>
+            </tr>
+            <tr class="pedra">
+                <td>Tyranitar <br> <img class="icon" src="pokeicon2/tyranitar.png" alt="charmander"></td>
+                <td>Pedra/Sombrio</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Lugia <br> <img class="icon" src="pokeicon2/lugia.png" alt="charmander"></td>
+                <td>Psíquico/Voador</td>
+            </tr>
+            <tr class="fogo">
+                <td>Ho-oh <br> <img class="icon" src="pokeicon2/ho-oh.png" alt="charmander"></td>
+                <td>Fogo/Voador</td>
+            </tr>
+            <tr class="psiquico">
+                <td>Celebi <br> <img class="icon" src="pokeicon2/celebi.png"  alt="charmander"></td>
+                <td>Psíquico/Planta</td>
+            </tr>
+            
         </tbody>
         <tfoot>
             <tr>
@@ -747,6 +1174,7 @@
             </tr>
         </tfoot>
     </table>
+ </div>
 
 </body>
 </html>
