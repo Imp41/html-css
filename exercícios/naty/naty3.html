@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .div01 {
+            flex-direction: column;  
+        }
+        .div02 { 
+            margin: 4em 8em 4em 8em; 
+        }
+        .div03 {
+            margin: 0em 0em 0em 8em;
+            width: 35em;
+
+        }
+        .logotext {
+            color: #c92071;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        #barra {
+            margin: 0em 4em 0em 4em;     
+            width: 35vw;
+            height: 2.5vw; 
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav > a {
+            color:#383838;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #c92071 ;
+        }
+        .cadastro {
+            font-size: 25px;
+            color: #383838;
+            margin-right: 40px;
+        }
+        .butao01 {
+            width: 150px;
+            height: 50px;
+            background-color: #c92071;
+            border-radius: 10px;
+            border: #c92071;
+            font-size: 25px;
+        }
+       
+        .butao01 > a {
+            text-decoration: none;
+            color: white;
+        }
+       
+        .carrinho {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="div01"> 
+            <div class="div02">
+                
+                <img src="imagens/logo.png" alt="logo"> <span class="logotext">Digital Store</span>
+                <input type="search" name="Pesquisar produto" id="barra">
+                <a href="#" class="cadastro">Cadastre-se</a>
+                <button class="butao01"><a href="">Entrar</a></button>
+                <a href="#"><img src="imagens/carrinho-de-compras.png" alt="carrinho" class="carrinho"></a>
+                
+            </div>
+            <div class="div03">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Produtos</a>
+                    <a href="#">Categorias</a>
+                    <a href="#">Meus Pedidos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
